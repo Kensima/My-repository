@@ -1,0 +1,26 @@
+ENGG1340 GROUP PROJEXTS -- Blackjack 2.0
+Group member:   Haoyu Sun 3035856055 
+YuKun Sima 3035946124
+
+Introduction: 
+This time, we make a game in which a single player or (two people (under consideration)) compete with 1-3 AI, and the total number of points in the player's hand is 21 points through the operation of opponent cards to win. The rules and playing methods of the game are different from the ordinary blackjack.
+
+Code contents:
+1.Catalogue : Display the directory including game description, file reading, single player mode, double player mode, difficulty, etc. players can enter the corresponding words in the input interface to enter different pages.
+
+2.Include the rules of the game, describe the card type, function card, how to use the store, and explain the turn order in the game in English.
+
+3.Single player mode: one player fights 1-3 AI.
+
+4.Store: function cards with different prices are sold in the store. Players can enter the store during the game, buy these function cards and use them in the game
+
+5.Difficulty: players can adjust AI to different difficulty levels: the difficulty is divided into 1-3 levels.
+
+6.Archiving and file reading: players can end the game in the process of the game and save the current game progress; Players can read the progress on the directory page to re-enter the unfinished game.
+
+
+Brief rule description:
+This design of 21 points is different from ordinary 21 points. Players must receive one new card in each round from the first round, and the number of cards varies from (1-10) (players can and can only take one additional card (between 1-5) in the first round). The cards between AI and player are not visible to each other. After the game starts, both players and AI have an action opportunity and an opportunity to use special cards; The order of action is from small to large according to the sum of hand points. During the action, players and AI can give others a card, discard a card, watch one’s card and exchange cards with others by using special function cards; Also, they can choose attack, defense and neutrality in action. The interaction of different actions can produce different results. After everyone's actions are completed, they will enter the settlement round. In the settlement round, if the total number of hand points of a person is greater than 21 points, the person will be eliminated. The remaining players and AI will continue to play until only one person survives. If the total number of hand points of one player is equal to 21 before the start of a round (after dealing cards), the game will forcibly enter the "final mode". In this mode, attack, defense and neutrality are not allowed. Players and AI can only use special function cards, and players with 21 points in hand must act at the end. If the total number of cards in the player's hand is still 21 points in the settlement mode, the player will win directly (if not then start a new and normal round). The rest will be ranked according to the number of hand points.
+
+Programme target：
+Design a card game that meets all the requirements of group project and has richer playing methods than ordinary blackjack.
